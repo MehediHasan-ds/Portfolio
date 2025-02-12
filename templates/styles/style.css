@@ -1,0 +1,72 @@
+/* Default Light Mode */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Unified Navbar Styling */
+.navbar {
+    background-color: #000000 !important;
+    padding: 15px 20px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Navbar Brand Text */
+.navbar-brand {
+    font-size: 1.6rem !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    transition: color 0.3s ease-in-out !important;
+}
+
+.navbar-brand:hover {
+    color: #0056b3 !important;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 1.1rem !important;  /* Standardizing text size */
+    font-weight: 500 !important;
+    transition: color 0.3s ease-in-out !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+
+/* Text Hover Effect */
+h1, h3, .lead {
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover, h3:hover, .lead:hover {
+    color: #007bff;
+}
+
+/* Scroll Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #343a40;
+}
