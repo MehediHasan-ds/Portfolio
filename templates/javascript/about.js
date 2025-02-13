@@ -24,30 +24,52 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-        const modal = document.createElement("div");
-        modal.classList.add("modal");
-        modal.innerHTML = `
-            <span class="modal-close">&times;</span>
-            <iframe class="pdf-viewer"></iframe>
-        `;
-        document.body.appendChild(modal);
-    
-        const pdfViewer = modal.querySelector(".pdf-viewer");
-        const closeModal = modal.querySelector(".modal-close");
-    
-        // Function to open the modal when clicking on a certification
-        document.querySelectorAll(".certification-card").forEach(card => {
-            card.addEventListener("click", () => {
-                const pdfUrl = card.getAttribute("data-pdf");
-                pdfViewer.src = pdfUrl; // Set the PDF source
-                modal.style.display = "flex"; // Show the modal
-            });
+    const modal = document.createElement("div");
+    modal.classList.add("modal");
+    modal.innerHTML = `<span class="modal-close">&times;</span><iframe class="pdf-viewer"></iframe>`;
+    document.body.appendChild(modal);
+
+    const pdfViewer = modal.querySelector(".pdf-viewer");
+    const closeModal = modal.querySelector(".modal-close");
+
+    // Function to open modal with specific PDF
+    const openPDFModal = (pdfUrl) => {
+        pdfViewer.src = "";  // Reset iframe first
+        setTimeout(() => {
+            pdfViewer.src = pdfUrl; // Load new PDF after reset
+        }, 100); 
+        modal.style.display = "flex";
+    };
+
+    // Function to close modal
+    const closePDFModal = () => {
+        modal.style.display = "none";
+        pdfViewer.src = ""; // Clear iframe to stop previous PDF from loading
+    };
+
+    // Attach click event to each certification card
+    document.querySelectorAll(".certification-card").forEach(card => {
+        card.addEventListener("click", () => {
+            const pdfUrl = card.getAttribute("data-pdf");
+            openPDFModal(pdfUrl);
         });
-    
-        // Function to close modal
-        closeModal.addEventListener("click", () => {
-            modal.style.display = "none";
-            pdfViewer.src = ""; // Clear iframe to stop previous PDF from loading
-        });
+    });
+
+    // Close modal when clicking the close button
+    closeModal.addEventListener("click", closePDFModal);
+
+    // Close modal when clicking outside the iframe
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            closePDFModal();
+        }
+    });
+
+    // Ensure browser back button closes the modal
+    window.addEventListener("popstate", () => {
+        if (modal.style.display === "flex") {
+            closePDFModal();
+        }
+    });
 
 });
