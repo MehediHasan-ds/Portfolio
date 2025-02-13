@@ -24,33 +24,30 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Modal for PDF viewing
-    const modal = document.createElement("div");
-    modal.classList.add("modal");
-    modal.innerHTML = `<span class="modal-close">&times;</span><iframe class="pdf-viewer"></iframe>`;
-    document.body.appendChild(modal);
-
-    const pdfViewer = modal.querySelector(".pdf-viewer");
-    const closeModal = modal.querySelector(".modal-close");
-
-    // Open modal with selected PDF
-    document.querySelectorAll(".certification-card").forEach(card => {
-        card.addEventListener("click", () => {
-            pdfViewer.src = card.getAttribute("data-pdf");
-            modal.style.display = "flex";
-            history.pushState({ modalOpen: true }, "", "#certification");
+        const modal = document.createElement("div");
+        modal.classList.add("modal");
+        modal.innerHTML = `
+            <span class="modal-close">&times;</span>
+            <iframe class="pdf-viewer"></iframe>
+        `;
+        document.body.appendChild(modal);
+    
+        const pdfViewer = modal.querySelector(".pdf-viewer");
+        const closeModal = modal.querySelector(".modal-close");
+    
+        // Function to open the modal when clicking on a certification
+        document.querySelectorAll(".certification-card").forEach(card => {
+            card.addEventListener("click", () => {
+                const pdfUrl = card.getAttribute("data-pdf");
+                pdfViewer.src = pdfUrl; // Set the PDF source
+                modal.style.display = "flex"; // Show the modal
+            });
         });
-    });
+    
+        // Function to close modal
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+            pdfViewer.src = ""; // Clear iframe to stop previous PDF from loading
+        });
 
-    // Close modal
-    const closePDFModal = () => {
-        modal.style.display = "none";
-        history.pushState({ modalOpen: false }, "", "#about");
-    };
-
-    closeModal.addEventListener("click", closePDFModal);
-    modal.addEventListener("click", e => { if (e.target === modal) closePDFModal(); });
-
-    // Handle browser back button
-    window.addEventListener("popstate", e => modal.style.display = e.state?.modalOpen ? "flex" : "none");
 });
