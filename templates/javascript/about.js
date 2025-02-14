@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to open modal with specific PDF
     const openPDFModal = (pdfUrl) => {
-        pdfViewer.src = "";  // Reset iframe first
+        pdfViewer.src = "";  // Reset iframe
         setTimeout(() => {
             pdfViewer.src = pdfUrl; // Load new PDF after reset
         }, 100); 

@@ -1,0 +1,21 @@
+.btn-group .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-group .btn:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.project-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

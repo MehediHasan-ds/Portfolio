@@ -1,0 +1,14 @@
+.search-bar {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.blog-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

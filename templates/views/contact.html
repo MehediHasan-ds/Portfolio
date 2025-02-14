@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mehedi Hasan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">Mehedi Hasan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-outline-light">🌙 Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contact Section -->
+    <section class="container contact-section">
+        <h1 class="text-center">Get in Touch</h1>
+        <p class="text-center lead">Feel free to reach out for collaborations, job opportunities, or just to say hi!</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow p-4">
+                    <h4 class="text-center">Send a Message</h4>
+                    <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLScBOcvcwy4ULzPw-YTgMbc0-w_Cn8SP2XIjmbw11TOcsSd9lg/formResponse" method="POST" target="_blank">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" name="entry.2005620554" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" name="entry.1045781291" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" placeholder="Your Message" name="entry.839337160" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        <p id="form-message" class="mt-2 text-center"></p>
+                    </form>
+                </div>
+            </div>
+
+            
+
+            <!-- <div class="col-md-6">
+                <form id="contact-form" action="https://formsubmit.co/mehedihasan398ps@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                    
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    <p id="form-message" class="mt-2 text-center"></p>
+                </form>
+                
+            </div> -->
+
+            <!-- Contact Info Card -->
+            <div class="col-md-5">
+                <div class="card shadow p-4">
+                    <h4 class="text-center">Contact Information</h4>
+                    <p class="text-center"><strong>Email:</strong> mehedihasan398ps@gmail.com</p>
+                    <p class="text-center"><strong>Phone:</strong> +8801857807034</p>
+                    <p class="text-center"><strong>Location:</strong> Dhaka, Bangladesh</p>
+
+                    <h4 class="text-center">Follow Me</h4>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://www.linkedin.com/in/mehedi-hasan-4553a4274/" target="_blank">
+                            <img src="../../icons/Linkedin.png" alt="LinkedIn" width="30">
+                        </a>
+                        <a href="https://x.com/Mehedi_DS_engr?t=CnQXAyNFEYX4NGJoHwS9RQ&s=09" target="_blank">
+                            <img src="../../icons/Twitter.png" alt="Twitter" width="30">
+                        </a>
+                        <a href="https://www.facebook.com/md.mehedi.hasan.763355" target="_blank">
+                            <img src="../../icons/Facebook.png" alt="Facebook" width="30">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 Mehedi Hasan. All Rights Reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/contact.js"></script>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
