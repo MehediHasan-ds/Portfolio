@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayProjects(filter = "all") {
         projectContainer.innerHTML = ""; // Clear current content
-
         projects
             .filter(project => filter === "all" || project.category === filter)
             .forEach(project => {

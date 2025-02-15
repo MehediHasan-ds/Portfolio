@@ -1,3 +1,9 @@
+body{
+    background-color: #ECF0F1 !important;
+}
+.card{
+    background-color: #e4f49d;
+}
 .btn-group .btn {
     transition: all 0.3s ease-in-out;
 }

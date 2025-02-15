@@ -1,3 +1,9 @@
+body{
+    background-color: #fff5e1 !important ;
+}
+.card{
+    background-color: #ffe2a9;
+}
 .search-bar {
     max-width: 500px;
     margin: 0 auto;

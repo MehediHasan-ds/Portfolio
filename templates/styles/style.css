@@ -18,6 +18,8 @@ body, html {
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
     display: flex !important;
     align-items: center !important;
+    /* box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5) !important; */
+
 }
 
 /* Navbar Brand Text */

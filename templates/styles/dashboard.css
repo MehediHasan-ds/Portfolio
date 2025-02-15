@@ -1,30 +1,159 @@
-body {
-    background-color: #f8f9fa;
+/* Custom styles for the dashboard */
+.dashboard .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
-h2 {
-    color: #333;
+.dashboard .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.card {
-    border-radius: 12px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+/* Card Heading Styling */
+.dashboard .card .card-title {
+    position: sticky; /* Fix the heading at the top */
+    top: 0; /* Stick to the top of the card */
+    background-color: inherit; /* Match the card background color */
+    z-index: 1; /* Ensure the heading stays above other content */
+    padding: 0.5rem;
+    margin: 0;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+.dashboard .card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    flex-grow: 1; /* Allow the body to take up remaining space */
 }
 
-.profile-pic {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+.dashboard .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 1.25rem; /* Increased padding for buttons */
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-canvas {
-    max-width: 600px;
-    margin: auto;
-    display: block;
+.dashboard .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Tech Image Cards Styling */
+
+#techCards img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Ensure images fit properly */
+}
+
+#techCards p {
+    font-size: 0.75rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+#techCards .row {
+    margin: 0;
+}
+
+/* Image Card */
+#imageCard {
+    background-color: #e6d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    overflow: hidden; /* Ensure image doesn't overflow */
+}
+
+#imageCard img {
+    width: 70%; /* image takes 70% of the card width */
+    height: 70%; /* image takes 70% of the card height */
+    object-fit: cover; /* the image covers the area without distortion */
+    margin-top: 10%;
+}
+
+#imageCard .card-body {
+    height: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Top 3 Cards */
+#bestProjectCard,
+#certificationsCard {
+    height: 275px !important; /* Fixed height for all cards */
+    text-align: justify;
+    text-justify: inter-word;
+}
+#latestProjectCard,
+#chartCard,
+#contactCard{
+    height: 260px !important;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Chart Card Styling */
+#chartCard .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* the card body takes full height */
+}
+
+#skillChart {
+    width: 100% !important;
+    height: 80% !important; /* chart takes 80% of the card height */
+}
+
+/* Light Mode Colors */
+
+#bestProjectCard {
+    background-color: #d8bfd8;
+}
+
+#latestProjectCard {
+    background-color: #dbd4db;
+}
+
+#chartCard {
+    background-color: #dfe6e9;
+}
+
+#certificationsCard {
+    background-color: #98fb98;
+}
+
+#contactCard {
+    background-color: #ffb6c1;
+}
+
+/* Dark Mode Colors */
+.dark-mode #imageCard {
+    background-color: #2c3e50;
+}
+
+.dark-mode #bestProjectCard {
+    background-color: #8e44ad;
+}
+
+.dark-mode #chartCard {
+    background-color: #2980b9;
+}
+
+.dark-mode #certificationsCard {
+    background-color: #e67e22;
+}
+
+.dark-mode #contactCard {
+    background-color: #c0392b;
 }
