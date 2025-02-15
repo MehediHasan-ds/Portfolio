@@ -5,47 +5,24 @@ body {
     font-family: 'Arial', sans-serif;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 body, html {
     margin: 0 !important;
     padding: 0 !important;
 }
 
-/* Unified Navbar Styling */
-.navbar {
-    background-color: #000000 !important;
-    padding: 15px 20px !important;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
-    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
-    display: flex !important;
-    align-items: center !important;
-    /* box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5) !important; */
-
-}
-
-/* Navbar Brand Text */
-.navbar-brand {
-    font-size: 1.6rem !important;
-    font-weight: bold !important;
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212 !important;
     color: #ffffff !important;
-    transition: color 0.3s ease-in-out !important;
 }
 
-.navbar-brand:hover {
-    color: #0056b3 !important;
+.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
 }
 
-/* Navbar Links */
-.navbar-nav .nav-link {
-    font-size: 1.1rem !important;  /* Standardizing text size */
-    font-weight: 500 !important;
-    transition: color 0.3s ease-in-out !important;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff !important;
-}
-
-/* Dark Mode Navbar */
 .dark-mode .navbar {
     background-color: #1e1e1e !important;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5) !important;
@@ -63,22 +40,6 @@ body, html {
     color: #00aaff !important;
 }
 
-/* Dark Mode Styles */
-.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.dark-mode .contact-section, 
-.dark-mode .card, 
-.dark-mode .list-group-item {
-    background-color: #1e1e1e !important;
-    color: #ffffff !important;
-    border: 1px solid #444 !important;
-}
-
-
-
 .dark-mode .btn-primary {
     background-color: #007bff !important;
     border-color: #0056b3 !important;
@@ -87,8 +48,6 @@ body, html {
 .dark-mode img {
     filter: brightness(0.8);
 }
-
-
 
 /* Card Effects */
 .card {
@@ -99,7 +58,6 @@ body, html {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Text Hover Effect */
 h1, h3, .lead {

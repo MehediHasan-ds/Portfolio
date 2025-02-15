@@ -1,9 +1,9 @@
-body{
+/* Default Light Mode Styles */
+body {
     background-color: #ECF0F1 !important;
 }
-.card{
-    background-color: #e4f49d;
-}
+
+/* Button Group Styling */
 .btn-group .btn {
     transition: all 0.3s ease-in-out;
 }
@@ -12,7 +12,9 @@ body{
     background-color: #0056b3;
 }
 
+/* Card Styling */
 .card {
+    background-color: #e4f49d;
     margin-bottom: 20px;
 }
 
@@ -21,6 +23,7 @@ body{
     object-fit: cover;
 }
 
+/* Fade-in Animation */
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);

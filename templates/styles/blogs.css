@@ -1,8 +1,12 @@
 body{
     background-color: #fff5e1 !important ;
 }
+
 .card{
     background-color: #ffe2a9;
+}
+.dark-mode .card{
+    background-color: #000;
 }
 .search-bar {
     max-width: 500px;

@@ -1,12 +1,19 @@
 body{
     background-color: #fef2c7 !important;
 }
+
 .card{
     background-color:#fdf4d6;
 }
+
 .list-group-item {
-    background-color: #fff;
+    background-color: #fdf4d6;
     border: none;
+}
+.dark-mode .list-group-item {
+    background-color: #121211;
+    border: none;
+    color:#ffffff;
 }
 
 .btn-primary {
