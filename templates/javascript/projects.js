@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "title": "Dengue Data Analysis Dashboard",
             "category": "Data Analysis",
             "description": "This project presents an interactive dashboard analyzing dengue cases in Dhaka, Bangladesh. Using advanced Excel functions and formulas, the data was processed, visualized, and transformed into meaningful insights to support health authorities in decision-making.",
-            "image": "../../images/project images/Dengue Data Analysis/Home_Page.png",
+            "image": "../../images/project images/Dengue Data Analysis/Dengue_Home_Page.png",
             "techStack": "Microsoft Excel",
             "github": "https://github.com/MehediHasan-ds/Data-Analysis-Projects",
             "liveDemo": "https://github.com/MehediHasan-ds/Data-Analysis-Projects",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             "title": "Mental Health Classification & BMI Prediction Using ML",
-            "category": "Machine Learning",
+            "category": "AI/ML",
             "description": "Developed classification models to predict mental health conditions (depression) and BMI using Linear Regression, Logistic Regression, Decision Tree, SVM, and SVC. Fine-tuned models with Grid Search and implemented preprocessing pipelines with feature scaling, missing value imputation, and categorical encoding.",
             "image": "../../images/project images/Mental Health Classification/Model_Performance.png",
             "techStack": "Python, Scikit-learn, Grid Search, StandardScaler, Seaborn, Matplotlib",
