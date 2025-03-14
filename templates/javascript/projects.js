@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "title": "E-Commerce Sales Analysis with Power BI",
             "category": "Data Analysis",
             "description": "Evaluated sales, revenue, profit trends, return rates, and geographical performance, identifying key growth opportunities. Leveraged customer segmentation and product insights to optimize pricing and marketing strategies. Implemented snowflake schema for efficient data organization, linking hierarchical product categories and regional sales data.",
-            "image": "../../images/project images/RFM and Cohort on Sales data/overview.png",
+            "image": "../../images/project images/images/Ecommerce Sales Analysis/summary.png",
             "techStack": "Power BI, DAX, Data Modeling, Snowflake Schema, Customer Segmentation",
             "github": "https://github.com/MehediHasan-ds/E-Commerce-Sales-Analysis-with-Power-BI.git",
             "liveDemo": "https://app.powerbi.com/view?r=eyJrIjoiMjg1ZTEzZWMtN2VjOS00NGM0LWJlNGItMjQ1ZWY0ZTM1YzBkIiwidCI6ImY5YWU1ZTMxLTQyMzYtNGZmNi05NWMwLTEyMzUxNDhmMTExMSIsImMiOjEwfQ%3D%3D",
