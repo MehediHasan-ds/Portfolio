@@ -24,23 +24,24 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Dengue Data Analysis Dashboard",
             category: "Data Analysis",
             description: "An interactive dashboard analyzing dengue cases in Dhaka, Bangladesh. Using advanced Excel functions and formulas, the data was processed, visualized, and transformed into meaningful insights to support health authorities in decision-making.",
-            image: "../../images/project images/Dengue Data Analysis/Home_Page.png",
+            image: "../../images/project images/Dengue Data Analysis/Dengue_Home_Page.png",
             link: "https://github.com/MehediHasan-ds/Data-Analysis-Projects",
-            date: "Jan 10, 2025" // Added date
+            date: "Jan 10, 2025"
         },
         {
             title: "Mental Health Classification & BMI Prediction Using ML",
             category: "Machine Learning",
             description: "Developed classification models to predict mental health conditions (depression) and BMI using Linear Regression, Logistic Regression, Decision Tree, SVM, and SVC. Fine-tuned models with Grid Search and implemented preprocessing pipelines with feature scaling, missing value imputation, and categorical encoding.",
-            image: "../../images/project images/Mental Health Classification/Model_Performance.png",
+            image: "../../images/project images/Mental Health State/roc_curve logistic regression.png",
             link: "https://colab.research.google.com/drive/1Sb6cmI6vWbgAyqzQ5U6gGNErpCOO892p?usp=sharing",
-            date: "Aug 23, 2023" // Added date
+            date: "Aug 23, 2023"
         }
     ];
 
     function displayBlogs(filter = "") {
+        console.log("Displaying blogs...");
         blogContainer.innerHTML = ""; // Clear current content
-
+    
         blogs
             .filter(blog => blog.title.toLowerCase().includes(filter.toLowerCase()))
             .forEach(blog => {
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
                 blogContainer.appendChild(blogCard);
             });
-
+    
         fadeInOnScroll();
     }
 

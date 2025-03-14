@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
             "title": "Mental Health Classification & BMI Prediction Using ML",
             "category": "ai/ml",
             "description": "Developed classification models to predict mental health conditions (depression) and BMI using Linear Regression, Logistic Regression, Decision Tree, SVM, and SVC. Fine-tuned models with Grid Search and implemented preprocessing pipelines with feature scaling, missing value imputation, and categorical encoding.",
-            "image": "../../images/project images/Mental Health Classification/Model_Performance.png",
+            "image": "../../images/project images/Mental Health State/roc_curve logistic regression.png",
             "techStack": "Python, Scikit-learn, Grid Search, StandardScaler, Seaborn, Matplotlib",
-            "Notebook-1": "https://colab.research.google.com/drive/1Sb6cmI6vWbgAyqzQ5U6gGNErpCOO892p?usp=sharing",
-            "Notebook-2": "https://colab.research.google.com/drive/1f56v8PjDDms7kyicMVNmG-l1WQICm4by?usp=sharing",
+            "github": "https://colab.research.google.com/drive/1Sb6cmI6vWbgAyqzQ5U6gGNErpCOO892p?usp=sharing",
+            "liveDemo": "https://colab.research.google.com/drive/1f56v8PjDDms7kyicMVNmG-l1WQICm4by?usp=sharing",
             "challenges": "Achieving high accuracy for mental health classification and minimizing MSE for BMI prediction."
         }
     ];
