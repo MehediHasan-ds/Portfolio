@@ -59,16 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="card-body">
                             <h5 class="card-title">${project.title}</h5>
                             <p class="card-text">${project.description}</p>
-                            <p><strong>Tech Stack:</strong> ${project.techStack}</p>
-                            <p><strong>Challenges:</strong> ${project.challenges}</p>
-                            <a href="${project.github}" class="btn btn-dark" target="_blank">GitHub</a>
-                            <a href="${project.liveDemo}" class="btn btn-primary" target="_blank">Live Demo</a>
+                            <p class="tech-stack"><strong>Tech Stack:</strong> ${project.techStack}</p>
+                            <p class="challenges"><strong>Challenges:</strong> ${project.challenges}</p>
+                            <div class="button-container">
+                                <a href="${project.github}" class="btn btn-dark" target="_blank">GitHub</a>
+                                <a href="${project.liveDemo}" class="btn btn-primary" target="_blank">Live Demo</a>
+                            </div>
                         </div>
                     </div>
                 `;
                 projectContainer.appendChild(projectCard);
             });
-
+    
         fadeInOnScroll();
     }
 
