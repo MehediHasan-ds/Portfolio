@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             "title": "Mental Health Classification & BMI Prediction Using ML",
-            "category": "AI/ML",
+            "category": "ai/ml",
             "description": "Developed classification models to predict mental health conditions (depression) and BMI using Linear Regression, Logistic Regression, Decision Tree, SVM, and SVC. Fine-tuned models with Grid Search and implemented preprocessing pipelines with feature scaling, missing value imputation, and categorical encoding.",
             "image": "../../images/project images/Mental Health Classification/Model_Performance.png",
             "techStack": "Python, Scikit-learn, Grid Search, StandardScaler, Seaborn, Matplotlib",

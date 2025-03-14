@@ -1,21 +1,49 @@
-body{
-    background-color: #fff5e1 !important ;
+body {
+    background-color: #fff5e1 !important;
 }
 
-.card{
+.card {
     background-color: #ffe2a9;
+    height: 500px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
-.dark-mode .card{
-    background-color: #000;
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
-.search-bar {
-    max-width: 500px;
-    margin: 0 auto;
+
+.card-text {
+    flex: 1; /* Allow description to take up remaining space */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .blog-img {
     height: 180px;
     object-fit: cover;
+}
+
+.button-container {
+    margin-top: auto; /* Push button to the bottom */
+    text-align: center;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+.search-bar {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .fade-in.visible {
